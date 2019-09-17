@@ -19,12 +19,57 @@ p{
 
 .container{
     width: 80%;
-    margin: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
     padding: 45px 20px;
-}
+    background-color: #FFFFFF;
+    border-radius: 30px;
+ }
 
 /* Header + Navbar */
+.headContainers{
+   
+    padding: 0px 100% 0 0;
+    background: green;
+}
+.listNav{
+  
+}
 
+.menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    
+
+}
+.menu a{
+    text-decoration:none;
+    color: white;
+}
+.logoGreenCityNavBar{ 
+    height: 100%;
+    width: 80px;
+    
+}
+
+.liNavbar{
+    padding: 14px  80px;
+    background-color: green;
+}
+
+.liNavbar:hover {
+    background-color: #8de052;
+    color: black;
+
+}
+
+.imageCarrousel {
+    width: 100%;
+    height: 250px;
+}
 /* Actions, Associations */
 
 /* Gestion des dechets */
