@@ -11,6 +11,11 @@ body{
 
 h1, h2, h3{
     font-family: 'Cabin', sans-serif;
+    margin: 0 auto;
+}
+
+h2, h3 {
+    text-align: center;
 }
 
 p{
@@ -19,13 +24,29 @@ p{
 
 .container{
     width: 80%;
-    margin: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
     padding: 45px 20px;
-}
+    background-color: #FFFFFF;
+    border-radius: 30px;
+ }
 
 /* Header + Navbar */
 
 /* Actions, Associations */
+.actions-title {
+    margin-bottom: 10px;
+}
+.actions {
+    display: flex;
+    flex-direction: column;
+}
+
+.actions-pic {
+    width: 100%;
+    margin-bottom: 10px;
+}
 
 /* Gestion des dechets */
 
