@@ -129,6 +129,10 @@ p{
     flex-wrap: wrap;
 }
 
+#waste h3 {
+    color: #80BCE8;
+}
+
 #waste li {
     color: #333333;
     font-size: 16px;
