@@ -9,7 +9,7 @@ body{
     background-color: #8de052;
 }
 
-h1, h2, h3{
+h1, h2, h3, h4, h5{
     font-family: 'Cabin', sans-serif;
     margin: 0 auto;
 }
@@ -18,13 +18,10 @@ h2, h3 {
     text-align: center;
 }
 
-h2, h3 {
-    text-align: center;
+h5 {
+    font-size: 20px;
+    font-weight: 400;
 }
-
-h2, h3 {
-    text-align: center;
- }
 
 p{
     font-family: 'Roboto', sans-serif;
@@ -160,12 +157,17 @@ p{
 /* Map */
 
 .map {
-    display: flex;
+    display: none;
     justify-content: space-between;
+}
+
+#mapTitle {
+    padding-left: 40px;
 }
 
 .map__image {
     width: 50%;
+    padding-left: 2%;
 }
 
 .map__image path{
@@ -182,8 +184,8 @@ p{
 .map__image svg {
     width: 100%;
     height: 350px;
-
 }
+
 .map__list{
     width: 50%;
     margin-top: 80px;
@@ -195,8 +197,12 @@ p{
     transition: color 0.3s;
 }
 
-.map__list ul li {
-    list-style: none !important;
+#allList {
+    list-style: none;
+}
+
+#allList li {
+    margin-top: 20px;
 }
 
 .listZone {
@@ -262,6 +268,10 @@ footer{
 
     #waste article {
         width: 55%;
+    }
+
+    .map {
+        display: flex;
     }
 }
 
