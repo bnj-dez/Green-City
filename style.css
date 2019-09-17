@@ -96,8 +96,6 @@ p{
     width: 100%;
     margin-bottom: 10px;
 }
-
-<<<<<<< HEAD
 .association{
     display: flex;
     flex-direction: column;
@@ -115,38 +113,7 @@ p{
 .association figure{
     margin-bottom: 20px;
 }
-=======
-  /* Mobile */
-  @media only screen and (max-width: 414px) {
-    .actions {
-        width: 100%;
-    }
-    .actions-title {
-        font-size: 100%;
-    }
-  }
-  
-  /* Tablet */
-  @media only screen and (min-width: 415px) and (max-width: 768px) {
-    .actions {
-        flex-direction: row;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-  }
-  
-  /* Desktop */
-  @media only screen and (min-width: 769px) {
-    .actions {
-        flex-direction: row;
-        margin-left: 10px;
-        margin-right: 10px;    }
-    .actions-title {
-        font-size: 36px;
-    }
-  }
-  
->>>>>>> actions
+
 /* Gestion des dechets */
 
 .margin {
@@ -271,6 +238,36 @@ footer{
 
 /* Media query : Gestion des déchets */
 
+ /* Mobile */
+
+ @media only screen and (max-width: 414px) {
+    .actions {
+        width: 100%;
+    }
+    .actions-title {
+        font-size: 100%;
+    }
+  }
+  
+  /* Tablet */
+  @media only screen and (min-width: 415px) and (max-width: 768px) {
+    .actions {
+        flex-direction: row;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+  }
+  
+  /* Desktop */
+  @media only screen and (min-width: 769px) {
+    .actions {
+        flex-direction: row;
+        margin-left: 10px;
+        margin-right: 10px;    }
+    .actions-title {
+        font-size: 36px;
+    }
+  }
 
 @media screen and (min-width: 769px) {
     #trash {
