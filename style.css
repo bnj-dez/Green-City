@@ -42,14 +42,21 @@ p{
 }
 
 /* Header + Navbar */
+ 
+
+
+
+
+
 .headContainers{
-   
-    padding: 0px 100% 0 0;
+    width: 100%;
+    padding: 0 auto;
     background: green;
 }
 
 .listNav{
-  
+    display: flex;
+    align-items: center;
 }
 
 .menu{
@@ -57,6 +64,7 @@ p{
     display: flex;
     align-items: center;
     list-style-type: none;
+    font-family: 'Roboto';
     
 
 }
@@ -69,7 +77,11 @@ p{
     width: 80px;
     
 }
+.lienNav{
+    display: flex;
+    align-items: center;
 
+}
 .liNavbar{
     padding: 14px  80px;
     background-color: green;
@@ -85,6 +97,24 @@ p{
     width: 100%;
     height: 250px;
 }
+
+.menuBurgers{
+    display: none;
+}
+.menuBurgersList{
+    display: none;
+}
+.menuBurgerInput{
+    display: none;
+}
+.menuBurgerLabel{
+    display: none;
+
+}
+.menuBurgerInput:checked ~ .menuBurgersList {
+    display: block;
+}
+
 /* Actions, Associations */
 
 .actions-title {
@@ -148,6 +178,43 @@ footer{
     padding: 20px;
 }
 
+/* Media query NavBar*/
+
+@media screen and (max-width: 769px) {
+    .lienNav {
+        display: none;
+    }
+    .menuBurgers{
+        display: flex;
+        align-items: flex-end;
+    }
+    .menuBurgersList{
+        display: none;
+       
+    }
+    .menuBurgersList a{
+        text-decoration: none;
+        color: white;
+        font-family: 'Roboto';
+       
+    }
+    .menuBurgerInput{
+        display: none;
+    }
+    .menuBurgerLabel{
+        display: block;
+        padding: 10px 10px;
+        font-size: 50px;
+            
+
+    }
+    .menuBurgersList a:hover{
+        background-color: #8de052;
+        color: black;
+    }
+}s
+
+
 /* Media query : Gestion des déchets */
 
 @media screen and (min-width: 769px) {
@@ -169,3 +236,4 @@ footer{
     align-items: center;
     }
 }
+
