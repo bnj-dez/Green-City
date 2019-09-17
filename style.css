@@ -156,16 +156,38 @@ p{
     margin-bottom: 45px;
 }
 
+.look {
+    font-weight: 600;
+    color: #80BCE8;
+    font-style: italic;
+}
+
 #conseil, #collect {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
+#waste  {
+    line-height: 1.50em;
+}
+
+#waste h3 {
+    color: #80BCE8;
+    font-size: 26px;
+    font-weight: 400;
+}
+
 #waste li {
     color: #333333;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
+    margin-left: 10px;
+    margin-bottom: 2%;
+}
+
+#waste img {
+    border-radius: 10px;
 }
 
 /* Contact and form */
@@ -183,14 +205,36 @@ footer{
 
 /* Media query : Gestion des déchets */
 
+
 @media screen and (min-width: 769px) {
+    #trash {
+        order: 2;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
     #waste img {
-        width: 28%;
+        width: 45%;
         height: 100%;
     }
 
     #waste article {
-        width: 60%;
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    #waste p {
+        line-height: 1.75em;
+    }
+
+    #waste img {
+        width: 32%;
+        height: 100%;
+    }
+
+    #waste article {
+        width: 55%;
     }
 }
 
