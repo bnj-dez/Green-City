@@ -256,15 +256,95 @@ p{
 
 /* Contact and form */
 
+.container-input{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    justify-content: center;
+  }
+
+input{
+    height: 20px;
+    width: 90%;
+    margin: 15px auto;
+    padding: 10px;
+    border-color: #056837;
+    border-radius: 30px;
+    font-size: 15px;
+    border-bottom-width: 4px;
+  }
+
+textarea{
+    height: 100px;
+    width: 90%;
+    margin: 15px auto;
+    padding: 10px;
+    border-color: #056837;
+    border-bottom-width: 4px;
+    border-radius: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+  }
+
+.opacity:hover{
+    opacity: 0.5; 
+}
+
+.button{
+    width: 90px;
+    height: 40px;
+    margin: 15px auto;
+    padding: 10px;
+    border-color: #056837;
+    border-radius: 30px;
+    font-size: 15px;
+    border-bottom-width: 4px;
+}
+
 /* Footer */
 
 footer{
     background-color: #056837;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 10px;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "absolu reseaux" "relatif .";
+    align-items: left;
+    padding-left: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.absolu {
+    grid-area: absolu;
+}
+  
+.relatif {
+    grid-area: relatif;
+}
+  
+.reseaux {
+    grid-area: reseaux;
+    margin: 0 auto;
+}
+
+footer a{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+footer ul:nth-of-type(3){
+    flex-direction: row;
+}
+
+footer li{
+    padding: 5px;
+    list-style: none;
+}
+
+.underline:hover{
+    text-decoration: underline;
 }
 
 /* Media query NavBar*/
@@ -379,10 +459,13 @@ footer{
 
 /* Media query : Footer */
 
-@media screen and (max-width:736px){
+@media screen and (min-width:769px){
     footer{
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: " absolu relatif reseaux";
+    margin: 10px;
+    padding: 20px;
     }
 }
-
