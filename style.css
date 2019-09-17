@@ -1,0 +1,34 @@
+/* Partie General */
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    width:100%;
+    background-color: #8de052;
+}
+
+h1, h2, h3{
+    font-family: 'Cabin', sans-serif;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: 20px;
+    padding: 45px 20px;
+}
+
+/* Header + Navbar */
+
+/* Actions, Associations */
+
+/* Gestion des dechets */
+
+/* Contact and form */
+
+/* Footer */
