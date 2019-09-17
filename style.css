@@ -13,6 +13,10 @@ h1, h2, h3{
     font-family: 'Cabin', sans-serif;
 }
 
+h2, h3 {
+    text-align: center;
+}
+
 p{
     font-family: 'Roboto', sans-serif;
 }
@@ -33,7 +37,15 @@ p{
 
 /* Gestion des dechets */
 
+.margin {
+    margin-bottom: 45px;
+}
 
+#waste div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
 /* Contact and form */
 
