@@ -40,3 +40,19 @@ p{
 /* Contact and form */
 
 /* Footer */
+
+footer{
+    background-color: #056837;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 20px;
+}
+
+@media screen and (max-width:736px){
+    footer{
+    flex-direction: column;
+    align-items: center;
+    }
+}
