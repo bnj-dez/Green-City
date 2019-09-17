@@ -118,20 +118,20 @@ p{
 .association figure{
     margin-bottom: 20px;
 }
-=======
-  /* Mobile */
+
+/* Mobile */
   @media only screen and (max-width: 414px) {
-    .actions {
+    .act {
         width: 100%;
     }
-    .actions-title {
+    .act-title {
         font-size: 100%;
     }
   }
   
   /* Tablet */
   @media only screen and (min-width: 415px) and (max-width: 768px) {
-    .actions {
+    .act {
         flex-direction: row;
         margin-left: 10px;
         margin-right: 10px;
@@ -140,16 +140,15 @@ p{
   
   /* Desktop */
   @media only screen and (min-width: 769px) {
-    .actions {
+    .act {
         flex-direction: row;
         margin-left: 10px;
         margin-right: 10px;    }
-    .actions-title {
+    .act-title {
         font-size: 36px;
     }
   }
   
->>>>>>> actions
 /* Gestion des dechets */
 
 .margin {
