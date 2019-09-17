@@ -48,6 +48,36 @@ p{
     margin-bottom: 10px;
 }
 
+  /* Mobile */
+  @media only screen and (max-width: 414px) {
+    .actions {
+        width: 100%;
+    }
+    .actions-title {
+        font-size: 100%;
+    }
+  }
+  
+  /* Tablet */
+  @media only screen and (min-width: 415px) and (max-width: 768px) {
+    .actions {
+        flex-direction: row;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+  }
+  
+  /* Desktop */
+  @media only screen and (min-width: 769px) {
+    .actions {
+        flex-direction: row;
+        margin-left: 10px;
+        margin-right: 10px;    }
+    .actions-title {
+        font-size: 36px;
+    }
+  }
+  
 /* Gestion des dechets */
 
 /* Contact and form */
