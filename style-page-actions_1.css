@@ -90,32 +90,16 @@ p{
 .actions-title {
     margin-bottom: 10px;
 }
-.actions {
-    display: flex;
-    flex-direction: column;
-}
 
-.actions-pic {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.association{
+.act {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.assoAction:active ~ .association div{
-    visibility: hidden;
-}
-.association h2{
-    font-size: 35px;
-    margin-bottom: 20px;
-}
-
-.association figure{
-    margin-bottom: 20px;
+.actions-pic {
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 /* Mobile */
