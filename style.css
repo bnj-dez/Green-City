@@ -37,16 +37,11 @@ p{
     border-radius: 30px;
 }
 
-
-
 /* Header + Navbar */
 .headContainers{
    
     padding: 0px 100% 0 0;
     background: green;
-}
-.listNav{
-  
 }
 
 .menu{
@@ -83,6 +78,20 @@ p{
     height: 250px;
 }
 /* Actions, Associations */
+
+.actions-title {
+    margin-bottom: 10px;
+}
+.actions {
+    display: flex;
+    flex-direction: column;
+}
+
+.actions-pic {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
 .association{
     display: flex;
     flex-direction: column;
@@ -105,18 +114,34 @@ p{
     width: 200px;
 }
 
+figure img{
+        width:200px;
+        margin: 10px;
+    }
+
 .association h2{
     font-size: 35px;
     margin-bottom: 20px;
 }
 
+.titleAssoDesktop{
+    display:none;
+}
+
 .association figure{
     margin-bottom: 20px;
 }
+
 /* Gestion des dechets */
 
 .margin {
     margin-bottom: 45px;
+}
+
+.look {
+    font-weight: 600;
+    color: #80BCE8;
+    font-style: italic;
 }
 
 #conseil, #collect {
@@ -125,10 +150,26 @@ p{
     flex-wrap: wrap;
 }
 
+#waste  {
+    line-height: 1.50em;
+}
+
+#waste h3 {
+    color: #80BCE8;
+    font-size: 26px;
+    font-weight: 400;
+}
+
 #waste li {
     color: #333333;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
+    margin-left: 10px;
+    margin-bottom: 2%;
+}
+
+#waste img {
+    border-radius: 10px;
 }
 
 /* Contact and form */
@@ -145,13 +186,34 @@ footer{
 /* Media query : Gestion des déchets */
 
 @media screen and (min-width: 769px) {
+    #trash {
+        order: 2;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
     #waste img {
-        width: 28%;
+        width: 45%;
         height: 100%;
     }
 
     #waste article {
-        width: 60%;
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    #waste p {
+        line-height: 1.75em;
+    }
+
+    #waste img {
+        width: 32%;
+        height: 100%;
+    }
+
+    #waste article {
+        width: 55%;
     }
 }
 
@@ -193,6 +255,7 @@ footer{
         width:0;
         padding: 0;
         overflow: visible;
+        margin-left: 50%;
     }
     
     .masque:target{
@@ -202,7 +265,11 @@ footer{
         width: 0;
     }
 
-    figure img{
-        
+    .titleAsso{
+        display:none;
+    }
+
+    .titleAssoDesktop{
+        display: block;
     }
 }
