@@ -20,6 +20,10 @@ h2, h3 {
 
 h2, h3 {
     text-align: center;
+}
+
+h2, h3 {
+    text-align: center;
  }
 
 p{
@@ -37,14 +41,13 @@ p{
     border-radius: 30px;
 }
 
-
-
 /* Header + Navbar */
 .headContainers{
    
     padding: 0px 100% 0 0;
     background: green;
 }
+
 .listNav{
   
 }
@@ -83,6 +86,20 @@ p{
     height: 250px;
 }
 /* Actions, Associations */
+
+.actions-title {
+    margin-bottom: 10px;
+}
+.actions {
+    display: flex;
+    flex-direction: column;
+}
+
+.actions-pic {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
 .association{
     display: flex;
     flex-direction: column;
