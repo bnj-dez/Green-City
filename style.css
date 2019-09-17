@@ -13,14 +13,22 @@ h1, h2, h3{
     font-family: 'Cabin', sans-serif;
 }
 
+h2, h3 {
+    text-align: center;
+ }
+
 p{
     font-family: 'Roboto', sans-serif;
 }
 
 .container{
     width: 80%;
-    margin: 20px;
-    padding: 45px 20px;
+   margin: 0 auto;
+   margin-top: 30px;
+   margin-bottom: 30px;
+   padding: 45px 20px;
+   background-color: #FFFFFF;
+   border-radius: 30px;
 }
 
 /* Header + Navbar */
