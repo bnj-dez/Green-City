@@ -163,6 +163,7 @@ p{
 
 #mapTitle {
     padding-left: 40px;
+    display: none;
 }
 
 .map__image {
@@ -300,6 +301,10 @@ footer{
         width: 55%;
     }
 
+    #mapTitle {
+        display: block;
+    }
+    
     .map {
         display: flex;
     }
