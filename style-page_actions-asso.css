@@ -40,12 +40,17 @@ p{
     background-color: #FFFFFF;
     border-radius: 30px;
 }
-
 /* Header + Navbar */
+
 .headContainers{
-   
-    padding: 0px 100% 0 0;
-    background: green;
+    width: 100%;
+    padding: 0 auto;
+    background: #056837;
+}
+
+.listNav{
+    display: flex;
+    align-items: center;
 }
 
 .menu{
@@ -53,30 +58,86 @@ p{
     display: flex;
     align-items: center;
     list-style-type: none;
+    font-family: 'Roboto';
+
 }
 
 .menu a{
     text-decoration:none;
     color: white;
 }
+
 .logoGreenCityNavBar{ 
-    height: 100%;
-    width: 80px; 
+    height: 80px;
+    width: 180px;
+    
+}
+
+.lienNav{
+    display: flex;
+    align-items: center;
+
 }
 
 .liNavbar{
     padding: 14px  80px;
-    background-color: green;
+    background-color: #056837;
+    color: white;
+    border-radius: 7px;
 }
 
 .liNavbar:hover {
     background-color: #8de052;
     color: black;
+
+}
+
+.Carousel{
+    height: 400px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("img/City.jpg");
+} 
+
+.menuBurgers{
+    display: none;
+}
+.menuBurgersList{
+    display: none;
+    list-style: none;
+}
+.menuBurgerInput{
+    display: none;
+}
+.menuBurgerLabel{
+    display: none;
+
+}
+.liNavbarBurger{
+    display:none;
+}
+.menuBurgerInput:checked ~ .menuBurgersList {
+    display: block;
+}
+
+.menuBurgerInput:checked ~ .menuBurgerLabel{
+    position: relative;
+    top: 0%; 
+    left: 122px;
+    color: white;
+}
+
+.menuBurgerInput:checked ~ .logoGreenCityNavBar{
+    height: 180px;
+    width: 320px;
+    
 }
 
 .imageCarrousel {
     width: 100%;
-    height: 250px;
+    height: 500px;
 }
 
 /* Actions, Associations */
