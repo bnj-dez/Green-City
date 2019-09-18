@@ -299,7 +299,7 @@ input{
     margin: 15px auto;
     padding: 10px;
     border-color: #056837;
-    border-radius: 30px;
+    border-radius: 15px;
     font-size: 15px;
     border-bottom-width: 4px;
   }
@@ -311,7 +311,7 @@ textarea{
     padding: 10px;
     border-color: #056837;
     border-bottom-width: 4px;
-    border-radius: 30px;
+    border-radius: 15px;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
   }
@@ -338,7 +338,7 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "absolu reseaux" "relatif .";
+    grid-template-areas: "absolu reseaux" "relatif reseaux";
     align-items: left;
     padding-left: 20px;
     font-family: 'Roboto', sans-serif;
@@ -346,15 +346,18 @@ footer{
 
 .absolu {
     grid-area: absolu;
+    padding: 20px;
 }
   
 .relatif {
     grid-area: relatif;
+    padding: 20px;
 }
   
 .reseaux {
     grid-area: reseaux;
     margin: 0 auto;
+    padding: 20px;
 }
 
 footer a{
