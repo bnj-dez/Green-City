@@ -322,10 +322,11 @@ input{
     width: 90%;
     margin: 15px auto;
     padding: 10px;
-    border-color: #056837;
     border-radius: 15px;
     font-size: 15px;
-    border-bottom-width: 4px;
+    -webkit-box-shadow: 12px 9px 18px -11px rgba(0,0,0,0.58);
+    -moz-box-shadow: 12px 9px 18px -11px rgba(0,0,0,0.58);
+    box-shadow: 12px 9px 18px -11px rgba(0,0,0,0.58);
   }
 
 textarea{
@@ -333,11 +334,12 @@ textarea{
     width: 90%;
     margin: 15px auto;
     padding: 10px;
-    border-color: #056837;
-    border-bottom-width: 4px;
     border-radius: 15px;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
+    -webkit-box-shadow: 12px 9px 18px -11px rgba(0,0,0,0.58);
+    -moz-box-shadow: 12px 9px 18px -11px rgba(0,0,0,0.58);
+    box-shadow: 12px 9px 18px -11px rgba(0,0,0,0.58);
   }
 
 .opacity:hover{
@@ -349,10 +351,12 @@ textarea{
     height: 40px;
     margin: 15px auto;
     padding: 10px;
-    border-color: #056837;
     border-radius: 30px;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
-    border-bottom-width: 4px;
+    -webkit-box-shadow: 12px 9px 18px -11px rgba(0,0,0,0.58);
+    -moz-box-shadow: 12px 9px 18px -11px rgba(0,0,0,0.58);
+    box-shadow: 12px 9px 18px -11px rgba(0,0,0,0.58);
 }
 
 /* Footer */
