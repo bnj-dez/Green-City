@@ -214,6 +214,7 @@ figure img{
 .map {
     display: none;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 #mapTitle {
@@ -233,7 +234,7 @@ figure img{
     transition: fill 0.3s;
 }
 
-.map__image path:hover {
+.map__image .is-active path {
     fill: #5F70AD;
 }
 
@@ -247,10 +248,17 @@ figure img{
     margin-top: 10px;
 }
 
-.map__list a{
+.map__list a {
     color: inherit;
     text-decoration: none;
     transition: color 0.3s;
+}
+
+.map__list a.is-active {
+    position: relative;
+    height: auto;
+    padding: initial;
+    clip: initial;
 }
 
 #allList {
@@ -272,12 +280,6 @@ figure img{
     clip: rect(1px, 1px, 1px, 1px);
 }
 
-.listZone:target {
-    position: relative;
-    height: auto;
-    padding: initial;
-    clip: initial;
-}
 
 /* Contact and form */
 
