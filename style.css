@@ -54,13 +54,17 @@ p{
     align-items: center;
 }
 
+.listNav{
+    display: flex;
+    align-items: center;
+}
+
 .menu{
     width: 100%;
     display: flex;
     align-items: center;
     list-style-type: none;
     font-family: 'Roboto';
-
 }
 
 .menu a{
@@ -140,6 +144,28 @@ p{
     width: 100%;
     height: 500px;
 }
+
+.menuBurgers{
+    display: none;
+}
+.menuBurgersList{
+    display: none;
+}
+.menuBurgerInput{
+    display: none;
+}
+.menuBurgerLabel{
+    display: none;
+
+}
+.menuBurgerInput:checked ~ .menuBurgersList {
+    display: block;
+}
+
+.imageCarrousel {
+    width: 100%;
+    height: 250px;
+}
 /* Actions, Associations */
 
 .actions-title {
@@ -180,11 +206,20 @@ p{
 figure img{
         width:200px;
         margin: 10px;
-    }
+}
+
 
 .association h2{
-    font-size: 35px;
     margin-bottom: 20px;
+}
+
+.association a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.association h2:hover{
+    opacity: 0.5;
 }
 
 .titleAssoDesktop{
@@ -306,7 +341,6 @@ figure img{
     clip: rect(1px 1px 1px 1px); /* IE6 & IE7 */
     clip: rect(1px, 1px, 1px, 1px);
 }
-
 
 /* Contact and form */
 
@@ -456,7 +490,46 @@ footer li{
         display: block;
        
     }
+    .underline:hover{
+        text-decoration: underline;
+    }
 }
+/* Media query NavBar*/
+
+@media screen and (max-width: 769px) {
+    .lienNav {
+        display: none;
+    }
+    .menuBurgers{
+        display: flex;
+        align-items: flex-end;
+    }
+    .menuBurgersList{
+        display: none;
+       
+    }
+    .menuBurgersList a{
+        text-decoration: none;
+        color: white;
+        font-family: 'Roboto';
+       
+    }
+    .menuBurgerInput{
+        display: none;
+    }
+    .menuBurgerLabel{
+        display: block;
+        padding: 10px 10px;
+        font-size: 50px;
+            
+
+    }
+    .menuBurgersList a:hover{
+        background-color: #8de052;
+        color: black;
+    }
+}
+
 
 /* Media query : Gestion des déchets */
 
@@ -485,7 +558,8 @@ footer li{
     .actions {
         flex-direction: row;
         margin-left: 10px;
-        margin-right: 10px;    }
+        margin-right: 10px;    
+    }
     .actions-title {
         font-size: 36px;
     }
@@ -547,9 +621,6 @@ footer li{
 /* Media query : Association and Actions */
 
 @media screen and (min-width:769px){
-    .assoAction{
-        align-items: center;
-    }
     
     #asso{
         display: flex;
