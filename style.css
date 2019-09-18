@@ -46,7 +46,7 @@ p{
 .headContainers{
     width: 100%;
     padding: 0 auto;
-    background: green;
+    background: #056837;
 }
 
 .listNav{
@@ -60,6 +60,7 @@ p{
     align-items: center;
     list-style-type: none;
     font-family: 'Roboto';
+
 }
 
 .menu a{
@@ -68,8 +69,8 @@ p{
 }
 
 .logoGreenCityNavBar{ 
-    height: 100%;
-    width: 80px;
+    height: 80px;
+    width: 180px;
     
 }
 
@@ -81,7 +82,9 @@ p{
 
 .liNavbar{
     padding: 14px  80px;
-    background-color: green;
+    background-color: #056837;
+    color: white;
+    border-radius: 7px;
 }
 
 .liNavbar:hover {
@@ -90,16 +93,21 @@ p{
 
 }
 
-.imageCarrousel {
-    width: 100%;
-    height: 250px;
-}
+.Carousel{
+    height: 400px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("img/City.jpg");
+} 
 
 .menuBurgers{
     display: none;
 }
 .menuBurgersList{
     display: none;
+    list-style: none;
 }
 .menuBurgerInput{
     display: none;
@@ -108,13 +116,29 @@ p{
     display: none;
 
 }
+.liNavbarBurger{
+    display:none;
+}
 .menuBurgerInput:checked ~ .menuBurgersList {
     display: block;
 }
 
+.menuBurgerInput:checked ~ .menuBurgerLabel{
+    position: relative;
+    top: 0%; 
+    left: 122px;
+    color: white;
+}
+
+.menuBurgerInput:checked ~ .logoGreenCityNavBar{
+    height: 180px;
+    width: 320px;
+    
+}
+
 .imageCarrousel {
     width: 100%;
-    height: 250px;
+    height: 500px;
 }
 /* Actions, Associations */
 
@@ -391,13 +415,14 @@ footer li{
         align-items: flex-end;
     }
     .menuBurgersList{
-        display: none;
-       
+        display: none; 
     }
     .menuBurgersList a{
         text-decoration: none;
         color: white;
         font-family: 'Roboto';
+        height: 80px;
+        
        
     }
     .menuBurgerInput{
@@ -407,15 +432,26 @@ footer li{
         display: block;
         padding: 10px 10px;
         font-size: 50px;
+        color: white;
             
 
     }
     .menuBurgersList a:hover{
         background-color: #8de052;
-        color: black;
+        color: black; 
     }
-}
 
+    .menuBurgersList li {
+        list-style: none; 
+    }
+    .liNavbarBurger {
+        font-size: 25px;
+        line-height: 50px;
+        padding: 15px 20px;
+        border-radius: 7px;
+        display: block;
+       
+    }
 
 /* Media query : Gestion des déchets */
 
@@ -505,7 +541,7 @@ footer li{
 
 /* Media query : Association and Actions */
 
-@media screen and (min-width:769px){
+@media screen and(min-width:769px){
     .assoAction{
         align-items: center;
     }
