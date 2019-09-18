@@ -36,6 +36,9 @@ p{
     padding: 45px 20px;
     background-color: #FFFFFF;
     border-radius: 30px;
+    -webkit-box-shadow: 12px 9px 18px -11px rgba(0,0,0,0.58);
+    -moz-box-shadow: 12px 9px 18px -11px rgba(0,0,0,0.58);
+    box-shadow: 12px 9px 18px -11px rgba(0,0,0,0.58);
 }
 
 /* Header + Navbar */
