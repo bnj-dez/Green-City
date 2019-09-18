@@ -29,3 +29,4 @@ paths.forEach(function (path) {
         }
     });
 });
+
