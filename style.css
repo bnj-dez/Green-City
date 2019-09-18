@@ -6,7 +6,7 @@
 
 body{
     width:100%;
-    background-color: #8de052;
+    background: linear-gradient(0.25turn, #0c4c2c,#8de052);
 }
 
 h1, h2, h3, h4, h5{
@@ -43,7 +43,7 @@ p{
 .headContainers{
     width: 100%;
     padding: 0 auto;
-    background: linear-gradient(0.25turn, #0c4c2c,#8de052);
+    background: green;
 }
 
 .listNav{
