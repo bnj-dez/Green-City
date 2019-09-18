@@ -39,11 +39,6 @@ p{
 }
 
 /* Header + Navbar */
- 
-
-
-
-
 
 .headContainers{
     width: 100%;
@@ -62,23 +57,25 @@ p{
     align-items: center;
     list-style-type: none;
     font-family: 'Roboto';
-    
-
 }
+
 .menu a{
     text-decoration:none;
     color: white;
 }
+
 .logoGreenCityNavBar{ 
     height: 100%;
     width: 80px;
     
 }
+
 .lienNav{
     display: flex;
     align-items: center;
 
 }
+
 .liNavbar{
     padding: 14px  80px;
     background-color: green;
@@ -112,6 +109,10 @@ p{
     display: block;
 }
 
+.imageCarrousel {
+    width: 100%;
+    height: 250px;
+}
 /* Actions, Associations */
 
 .actions-title {
@@ -126,18 +127,41 @@ p{
     width: 100%;
     margin-bottom: 10px;
 }
+
 .association{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.assoAction:active ~ .association div{
-    visibility: hidden;
+.masque{
+    position: absolute;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    overflow: hidden;
 }
+
+.masque:target{
+    position: relative;
+    height: auto;
+    padding: initial;
+    width: 200px;
+}
+
+figure img{
+        width:200px;
+        margin: 10px;
+    }
+
 .association h2{
     font-size: 35px;
     margin-bottom: 20px;
+}
+
+.titleAssoDesktop{
+    display:none;
 }
 
 .association figure{
@@ -173,6 +197,7 @@ p{
 }
 
 #conseil li {
+
     color: #333333;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
@@ -467,5 +492,50 @@ footer li{
     grid-template-areas: " absolu relatif reseaux";
     margin: 10px;
     padding: 20px;
+    }
+}
+
+/* Media query : Association and Actions */
+
+@media screen and (min-width:769px){
+    .assoAction{
+        align-items: center;
+    }
+    
+    #asso{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #action{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .masque{
+        position: static;
+        border: 0;
+        height:auto;
+        width:0;
+        padding: 0;
+        overflow: visible;
+        margin-left: 50%;
+    }
+    
+    .masque:target{
+        position: static;
+        height: auto;
+        padding: 0;
+        width: 0;
+    }
+
+    .titleAsso{
+        display:none;
+    }
+
+    .titleAssoDesktop{
+        display: block;
     }
 }
