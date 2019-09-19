@@ -9,6 +9,10 @@ body {
     background: linear-gradient(0.25turn, #0c4c2c,#8de052);
 }
 
+h1 {
+    visibility: hidden;
+}
+
 h1, h2, h3, h4, h5 {
     font-family: 'Cabin', sans-serif;
     margin: 0 auto;
@@ -91,6 +95,7 @@ nav {
     background-color: #056837;
     color: white;
     border-radius: 7px;
+    font-size: 20px; 
 }
 
 .liNavbar:hover {
@@ -215,10 +220,10 @@ nav {
 }
 
 figure img {
-        width:200px;
-        margin: 10px;
-        border-radius: 10px;
-        box-shadow: 15px 15px 5px #5F70AD;
+    width:200px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #5F70AD;
 }
 
 
@@ -361,11 +366,19 @@ hr{
 
 /* Contact and form */
 
+form {
+    width: 90%;
+}
+
+form h2 {
+    color: #FFFFFF;
+}
+
 .container-input {
     display: flex;
     flex-direction: column;
-    margin: 10px;
     justify-content: center;
+    margin: 0 auto;
     }
 
 input {
@@ -393,10 +406,6 @@ textarea {
     box-shadow: 12px 9px 18px -11px rgba(0,0,0,0.58);
   }
 
-.opacity:hover {
-    opacity: 0.5; 
-}
-
 .button {
     width: 90px;
     height: 40px;
@@ -408,6 +417,10 @@ textarea {
     -webkit-box-shadow: 12px 9px 18px -11px rgba(0,0,0,0.58);
     -moz-box-shadow: 12px 9px 18px -11px rgba(0,0,0,0.58);
     box-shadow: 12px 9px 18px -11px rgba(0,0,0,0.58);
+}
+
+.button:hover {
+    background-color: #80BCE8;
 }
 
 /* Footer */
@@ -425,25 +438,29 @@ footer {
 
 .absolu {
     grid-area: absolu;
-    padding: 20px;
+    padding: 20px 20px 0px 10px;
 }
   
 .relatif {
     grid-area: relatif;
-    padding: 20px;
+    padding: 20px 20px 0px 10px;
 }
   
 .reseaux {
     grid-area: reseaux;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px 20px 0px 10px;
 }
 
 footer a {
     font-family: 'Roboto', sans-serif;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;
+}
+
+.opacity:hover {
+    opacity: 0.5;
 }
 
 footer ul:nth-of-type(3) {
@@ -461,7 +478,7 @@ footer li {
 
 /* Media query NavBar*/
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
     
     .lienNav {
         display: none;
@@ -514,10 +531,6 @@ footer li {
     .underline:hover {
         text-decoration: underline;
     }
-}
-/* Media query NavBar*/
-
-@media screen and (max-width: 769px) {
     
     .lienNav {
         display: none;
@@ -553,53 +566,15 @@ footer li {
         background-color: #8de052;
         color: black;
     }
+
+    .Carousel {
+        height: 300px;
+    }
 }
 
 
 /* Media query : Gestion des déchets */
 
- /* Mobile */
-
- @media only screen and (max-width: 414px) {
-    
-    .actions {
-        width: 100%;
-    }
-
-    .actions-title {
-        font-size: 100%;
-    }
-  }
-  
-  /* Tablet */
-  @media only screen and (min-width: 415px) and (max-width: 768px) {
-    
-    .actions {
-        flex-direction: row;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-  }
-  
-  /* Desktop */
-  @media only screen and (min-width: 769px) {
-    
-    .actions {
-        flex-direction: row;
-        margin-left: 10px;
-        margin-right: 10px;    
-    }
-
-    .actions-title {
-        font-size: 36px;
-    }
-  }
-
-@media screen and (min-width: 769px) {
-    #trash {
-        order: 2;
-    }
-}
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     #waste img {
@@ -636,23 +611,10 @@ footer li {
     }
 }
 
-/* Media query : Footer */
-
 @media screen and (min-width:769px){
-    
-    footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: " absolu relatif reseaux";
-    padding: 20px;
-    }
-}
 
-/* Media query : Association and Actions */
+    /* Media query : Association and Actions */
 
-@media screen and (min-width:769px){
-    
     #asso {
         display: flex;
         flex-direction: row;
@@ -696,5 +658,27 @@ footer li {
         margin-top: 30px;
         margin-left: -180px;
         margin-bottom: 30px;
+    }
+
+/* Media query : Gestion des déchets */
+
+    #trash {
+        order: 2;
+    }
+
+/* Media query : Form */
+    
+    form {
+        width: 60%;
+    }
+
+/* Media query : Footer */
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: " absolu relatif reseaux";
+        padding: 20px;
     }
 }

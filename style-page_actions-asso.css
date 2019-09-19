@@ -40,46 +40,57 @@ p{
     background-color: #FFFFFF;
     border-radius: 30px;
 }
+
+h1 {
+    color: #FFFFFF;
+}
+
 /* Header + Navbar */
 
-.headContainers{
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+.headContainers {
     width: 100%;
     padding: 0 auto;
     background: #056837;
 }
 
-.listNav{
+.listNav {
     display: flex;
     align-items: center;
 }
 
-.menu{
+.menu {
     width: 100%;
     display: flex;
     align-items: center;
     list-style-type: none;
     font-family: 'Roboto';
-
 }
 
-.menu a{
+.menu a {
     text-decoration:none;
     color: white;
 }
 
-.logoGreenCityNavBar{ 
+.logoGreenCityNavBar { 
     height: 80px;
     width: 180px;
     
 }
 
-.lienNav{
+.lienNav {
     display: flex;
     align-items: center;
-
 }
 
-.liNavbar{
+.liNavbar {
     padding: 14px  80px;
     background-color: #056837;
     color: white;
@@ -92,7 +103,7 @@ p{
 
 }
 
-.Carousel{
+.Carousel {
     height: 400px;
     background-attachment: fixed;
     background-size: cover;
@@ -101,35 +112,39 @@ p{
     background-image: url("img/City.jpg");
 } 
 
-.menuBurgers{
+.menuBurgers {
     display: none;
 }
-.menuBurgersList{
+
+.menuBurgersList {
     display: none;
     list-style: none;
 }
-.menuBurgerInput{
-    display: none;
-}
-.menuBurgerLabel{
-    display: none;
 
+.menuBurgerInput {
+    display: none;
 }
-.liNavbarBurger{
+
+.menuBurgerLabel {
+    display: none;
+}
+
+.liNavbarBurger {
     display:none;
 }
+
 .menuBurgerInput:checked ~ .menuBurgersList {
     display: block;
 }
 
-.menuBurgerInput:checked ~ .menuBurgerLabel{
+.menuBurgerInput:checked ~ .menuBurgerLabel {
     position: relative;
     top: 0%; 
     left: 122px;
     color: white;
 }
 
-.menuBurgerInput:checked ~ .logoGreenCityNavBar{
+.menuBurgerInput:checked ~ .logoGreenCityNavBar {
     height: 180px;
     width: 320px;
     
@@ -138,6 +153,31 @@ p{
 .imageCarrousel {
     width: 100%;
     height: 500px;
+}
+
+.menuBurgers {
+    display: none;
+}
+
+.menuBurgersList {
+    display: none;
+}
+
+.menuBurgerInput {
+    display: none;
+}
+
+.menuBurgerLabel {
+    display: none;
+}
+
+.menuBurgerInput:checked ~ .menuBurgersList {
+    display: block;
+}
+
+.imageCarrousel {
+    width: 100%;
+    height: 250px;
 }
 
 /* Actions, Associations */
@@ -230,6 +270,101 @@ footer li{
 
 .underline:hover{
     text-decoration: underline;
+}
+
+/* Media query NavBar*/
+
+@media screen and (max-width: 769px) {
+    
+    .lienNav {
+        display: none;
+    }
+
+    .menuBurgers {
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    .menuBurgersList {
+        display: none; 
+    }
+
+    .menuBurgersList a {
+        text-decoration: none;
+        color: white;
+        font-family: 'Roboto';
+        height: 80px;
+    }
+
+    .menuBurgerInput {
+        display: none;
+    }
+
+    .menuBurgerLabel {
+        display: block;
+        padding: 10px 10px;
+        font-size: 50px;
+        color: white;
+    }
+
+    .menuBurgersList a:hover {
+        background-color: #8de052;
+        color: black; 
+    }
+
+    .menuBurgersList li {
+        list-style: none; 
+    }
+
+    .liNavbarBurger {
+        font-size: 25px;
+        line-height: 50px;
+        padding: 15px 20px;
+        border-radius: 7px;
+        display: block;   
+    }
+
+    .underline:hover {
+        text-decoration: underline;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    
+    .lienNav {
+        display: none;
+    }
+
+    .menuBurgers {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .menuBurgersList {
+        display: none;
+       
+    }
+
+    .menuBurgersList a {
+        text-decoration: none;
+        color: white;
+        font-family: 'Roboto';
+    }
+
+    .menuBurgerInput {
+        display: none;
+    }
+
+    .menuBurgerLabel {
+        display: block;
+        padding: 10px 10px;
+        font-size: 50px;
+    }
+
+    .menuBurgersList a:hover {
+        background-color: #8de052;
+        color: black;
+    }
 }
 
 /* Media query : Footer */

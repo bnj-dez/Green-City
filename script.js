@@ -4,8 +4,6 @@ var paths = map.querySelectorAll('.map__image a');
 
 var links = map.querySelectorAll('.map__list a');
 
-// Polyfill du forEach
-
 if (NodeList.prototype.forEach == undefined) {
     NodeList.prototype.forEach = function (callback) {
         [].forEach.call(this, callback)
