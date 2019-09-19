@@ -1,15 +1,15 @@
 /* Partie General */
-*{
+* {
     margin:0;
     padding:0;
 }
 
-body{
+body {
     width:100%;
     background: linear-gradient(0.25turn, #0c4c2c,#8de052);
 }
 
-h1, h2, h3, h4, h5{
+h1, h2, h3, h4, h5 {
     font-family: 'Cabin', sans-serif;
     margin: 0 auto;
 }
@@ -23,12 +23,12 @@ h5 {
     font-weight: 400;
 }
 
-p{
+p {
     font-family: 'Roboto', sans-serif;
     color: #333333;
 }
 
-.container{
+.container {
     width: 80%;
     margin: 0 auto;
     margin-top: 30px;
@@ -51,23 +51,18 @@ nav {
     z-index: 10000;
 }
 
-.headContainers{
+.headContainers {
     width: 100%;
     padding: 0 auto;
     background: #056837;
 }
 
-.listNav{
+.listNav {
     display: flex;
     align-items: center;
 }
 
-.listNav{
-    display: flex;
-    align-items: center;
-}
-
-.menu{
+.menu {
     width: 100%;
     display: flex;
     align-items: center;
@@ -75,24 +70,23 @@ nav {
     font-family: 'Roboto';
 }
 
-.menu a{
+.menu a {
     text-decoration:none;
     color: white;
 }
 
-.logoGreenCityNavBar{ 
+.logoGreenCityNavBar { 
     height: 80px;
     width: 180px;
     
 }
 
-.lienNav{
+.lienNav {
     display: flex;
     align-items: center;
-
 }
 
-.liNavbar{
+.liNavbar {
     padding: 14px  80px;
     background-color: #056837;
     color: white;
@@ -105,7 +99,7 @@ nav {
 
 }
 
-.Carousel{
+.Carousel {
     height: 400px;
     background-attachment: fixed;
     background-size: cover;
@@ -114,35 +108,39 @@ nav {
     background-image: url("img/City.jpg");
 } 
 
-.menuBurgers{
+.menuBurgers {
     display: none;
 }
-.menuBurgersList{
+
+.menuBurgersList {
     display: none;
     list-style: none;
 }
-.menuBurgerInput{
-    display: none;
-}
-.menuBurgerLabel{
-    display: none;
 
+.menuBurgerInput {
+    display: none;
 }
-.liNavbarBurger{
+
+.menuBurgerLabel {
+    display: none;
+}
+
+.liNavbarBurger {
     display:none;
 }
+
 .menuBurgerInput:checked ~ .menuBurgersList {
     display: block;
 }
 
-.menuBurgerInput:checked ~ .menuBurgerLabel{
+.menuBurgerInput:checked ~ .menuBurgerLabel {
     position: relative;
     top: 0%; 
     left: 122px;
     color: white;
 }
 
-.menuBurgerInput:checked ~ .logoGreenCityNavBar{
+.menuBurgerInput:checked ~ .logoGreenCityNavBar {
     height: 180px;
     width: 320px;
     
@@ -153,19 +151,22 @@ nav {
     height: 500px;
 }
 
-.menuBurgers{
+.menuBurgers {
     display: none;
 }
-.menuBurgersList{
-    display: none;
-}
-.menuBurgerInput{
-    display: none;
-}
-.menuBurgerLabel{
-    display: none;
 
+.menuBurgersList {
+    display: none;
 }
+
+.menuBurgerInput {
+    display: none;
+}
+
+.menuBurgerLabel {
+    display: none;
+}
+
 .menuBurgerInput:checked ~ .menuBurgersList {
     display: block;
 }
@@ -174,11 +175,13 @@ nav {
     width: 100%;
     height: 250px;
 }
+
 /* Actions, Associations */
 
 .actions-title {
     margin-bottom: 10px;
 }
+
 .actions {
     display: flex;
     flex-direction: column;
@@ -189,13 +192,13 @@ nav {
     margin-bottom: 10px;
 }
 
-.association{
+.association {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.masque{
+.masque {
     position: absolute;
     border: 0;
     height: 1px;
@@ -204,38 +207,44 @@ nav {
     overflow: hidden;
 }
 
-.masque:target{
+.masque:target {
     position: relative;
     height: auto;
     padding: initial;
-    width: 200px;
+    width: 250px;
 }
 
-figure img{
+figure img {
         width:200px;
         margin: 10px;
+        border-radius: 10px;
+        box-shadow: 15px 15px 5px #5F70AD;
 }
 
 
-.association h2{
+.association h2 {
     margin-bottom: 20px;
 }
 
-.association a{
+.association a {
     text-decoration: none;
     color: #000000;
 }
 
-.association h2:hover{
+.association h2:hover {
     opacity: 0.5;
 }
 
-.titleAssoDesktop{
+.titleAssoDesktop {
     display:none;
 }
 
-.association figure{
+.association figure {
     margin-bottom: 20px;
+}
+
+hr{
+    display: none;
 }
 
 /* Gestion des dechets */
@@ -267,7 +276,6 @@ figure img{
 }
 
 #conseil li {
-
     color: #333333;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
@@ -298,7 +306,7 @@ figure img{
     padding-left: 2%;
 }
 
-.map__image path{
+.map__image path {
     fill: #80BCE8;
     stroke-width: #FFFFFF;
     stroke-width: 1px;
@@ -314,7 +322,7 @@ figure img{
     height: 350px;
 }
 
-.map__list{
+.map__list {
     width: 50%;
     margin-top: 10px;
 }
@@ -353,14 +361,14 @@ figure img{
 
 /* Contact and form */
 
-.container-input{
+.container-input {
     display: flex;
     flex-direction: column;
     margin: 10px;
     justify-content: center;
-  }
+    }
 
-input{
+input {
     height: 20px;
     width: 90%;
     margin: 15px auto;
@@ -372,7 +380,7 @@ input{
     box-shadow: 12px 9px 18px -11px rgba(0,0,0,0.58);
   }
 
-textarea{
+textarea {
     height: 100px;
     width: 90%;
     margin: 15px auto;
@@ -385,11 +393,11 @@ textarea{
     box-shadow: 12px 9px 18px -11px rgba(0,0,0,0.58);
   }
 
-.opacity:hover{
+.opacity:hover {
     opacity: 0.5; 
 }
 
-.button{
+.button {
     width: 90px;
     height: 40px;
     margin: 15px auto;
@@ -404,7 +412,7 @@ textarea{
 
 /* Footer */
 
-footer{
+footer {
     background-color: #056837;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -431,59 +439,62 @@ footer{
     padding: 20px;
 }
 
-footer a{
+footer a {
     font-family: 'Roboto', sans-serif;
     color: white;
     font-size: 25px;
     text-decoration: none;
 }
 
-footer ul:nth-of-type(3){
+footer ul:nth-of-type(3) {
     flex-direction: row;
 }
 
-footer li{
+footer li {
     padding: 5px;
     list-style: none;
 }
 
-.underline:hover{
+.underline:hover {
     text-decoration: underline;
 }
 
 /* Media query NavBar*/
 
 @media screen and (max-width: 769px) {
+    
     .lienNav {
         display: none;
     }
-    .menuBurgers{
+
+    .menuBurgers {
         display: flex;
         align-items: flex-end;
     }
-    .menuBurgersList{
+    
+    .menuBurgersList {
         display: none; 
     }
-    .menuBurgersList a{
+
+    .menuBurgersList a {
         text-decoration: none;
         color: white;
         font-family: 'Roboto';
         height: 80px;
-        
-       
     }
-    .menuBurgerInput{
+
+    .menuBurgerInput {
         display: none;
     }
-    .menuBurgerLabel{
+
+    .menuBurgerLabel {
         display: block;
         padding: 10px 10px;
         font-size: 50px;
         color: white;
-            
-
     }
-    .menuBurgersList a:hover{
+
+    .menuBurgersList a:hover {
         background-color: #8de052;
         color: black; 
     }
@@ -491,49 +502,54 @@ footer li{
     .menuBurgersList li {
         list-style: none; 
     }
+
     .liNavbarBurger {
         font-size: 25px;
         line-height: 50px;
         padding: 15px 20px;
         border-radius: 7px;
-        display: block;
-       
+        display: block;   
     }
-    .underline:hover{
+
+    .underline:hover {
         text-decoration: underline;
     }
 }
 /* Media query NavBar*/
 
 @media screen and (max-width: 769px) {
+    
     .lienNav {
         display: none;
     }
-    .menuBurgers{
+
+    .menuBurgers {
         display: flex;
         align-items: flex-end;
     }
-    .menuBurgersList{
+
+    .menuBurgersList {
         display: none;
        
     }
-    .menuBurgersList a{
+
+    .menuBurgersList a {
         text-decoration: none;
         color: white;
         font-family: 'Roboto';
-       
     }
-    .menuBurgerInput{
+
+    .menuBurgerInput {
         display: none;
     }
-    .menuBurgerLabel{
+
+    .menuBurgerLabel {
         display: block;
         padding: 10px 10px;
         font-size: 50px;
-            
-
     }
-    .menuBurgersList a:hover{
+
+    .menuBurgersList a:hover {
         background-color: #8de052;
         color: black;
     }
@@ -545,9 +561,11 @@ footer li{
  /* Mobile */
 
  @media only screen and (max-width: 414px) {
+    
     .actions {
         width: 100%;
     }
+
     .actions-title {
         font-size: 100%;
     }
@@ -555,6 +573,7 @@ footer li{
   
   /* Tablet */
   @media only screen and (min-width: 415px) and (max-width: 768px) {
+    
     .actions {
         flex-direction: row;
         margin-left: 10px;
@@ -564,11 +583,13 @@ footer li{
   
   /* Desktop */
   @media only screen and (min-width: 769px) {
+    
     .actions {
         flex-direction: row;
         margin-left: 10px;
         margin-right: 10px;    
     }
+
     .actions-title {
         font-size: 36px;
     }
@@ -592,6 +613,7 @@ footer li{
 }
 
 @media screen and (min-width: 1025px) {
+    
     #waste p {
         line-height: 1.75em;
     }
@@ -617,7 +639,8 @@ footer li{
 /* Media query : Footer */
 
 @media screen and (min-width:769px){
-    footer{
+    
+    footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -630,19 +653,19 @@ footer li{
 
 @media screen and (min-width:769px){
     
-    #asso{
+    #asso {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
 
-    #action{
+    #action {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
 
-    .masque{
+    .masque {
         position: static;
         border: 0;
         height:auto;
@@ -652,18 +675,26 @@ footer li{
         margin-left: 50%;
     }
     
-    .masque:target{
+    .masque:target {
         position: static;
         height: auto;
         padding: 0;
         width: 0;
     }
 
-    .titleAsso{
+    .titleAsso {
         display:none;
     }
 
-    .titleAssoDesktop{
+    .titleAssoDesktop {
         display: block;
+    }
+
+    hr {
+        display: block;
+        width: 300%;
+        margin-top: 30px;
+        margin-left: -180px;
+        margin-bottom: 30px;
     }
 }
