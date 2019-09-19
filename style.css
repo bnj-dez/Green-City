@@ -453,7 +453,7 @@ footer li{
 
 /* Media query NavBar*/
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1100px) {
     .lienNav {
         display: none;
     }
