@@ -294,7 +294,7 @@ hr{
 
 #waste img {
     border-radius: 10px;
-    width: 200px;
+    width: 90%;
 }
 
 /* Map */
@@ -581,6 +581,7 @@ footer li {
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     #waste img {
         width: 45%;
+        height: 100%;
     }
 
     #waste article {
@@ -596,6 +597,7 @@ footer li {
 
     #waste img {
         width: 32%;
+        height: 100%;
     }
 
     #waste article {
