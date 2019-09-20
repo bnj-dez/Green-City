@@ -57,7 +57,7 @@ nav {
 
 .headContainers {
     width: 100%;
-    padding: 0 auto;
+    padding: 0;
     background: #056837;
 }
 
@@ -96,6 +96,10 @@ nav {
     color: white;
     border-radius: 7px;
     font-size: 20px; 
+}
+
+.menu ul {
+    list-style: none;
 }
 
 .liNavbar:hover {
@@ -313,7 +317,6 @@ hr{
 
 .map__image path {
     fill: #80BCE8;
-    stroke-width: #FFFFFF;
     stroke-width: 1px;
     transition: fill 0.3s;
 }
@@ -431,7 +434,6 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "absolu reseaux" "relatif reseaux";
-    align-items: left;
     padding-left: 20px;
     font-family: 'Roboto', sans-serif;
 }

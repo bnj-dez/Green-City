@@ -57,13 +57,17 @@ nav {
 
 .headContainers {
     width: 100%;
-    padding: 0 auto;
     background: #056837;
 }
 
 .listNav {
     display: flex;
     align-items: center;
+}
+
+div ul {
+    list-style: none;
+    font-size: 20px;
 }
 
 .menu {
@@ -231,7 +235,6 @@ footer{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "absolu reseaux" "relatif reseaux";
-    align-items: left;
     padding-left: 20px;
     font-family: 'Roboto', sans-serif;
 }
@@ -255,7 +258,7 @@ footer{
 footer a{
     font-family: 'Roboto', sans-serif;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;
 }
 
@@ -375,7 +378,6 @@ footer li{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: " absolu relatif reseaux";
-    margin: 10px;
     padding: 20px;
     }
 }
